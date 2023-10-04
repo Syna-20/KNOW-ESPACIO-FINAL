@@ -1,0 +1,256 @@
+ #flex-container{
+        margin-left: -8px;
+        margin-top: 142vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content:space-between;
+        position: absolute;
+        background-color: grey;
+        height: 550px;
+        width: 100%;
+        padding-top: 30px;
+        padding-right: 10px;
+        background: linear-gradient(45deg,black,grey 50% );
+        }
+        .image{
+
+        display: flex;
+        margin-bottom: 0.3%;
+        margin-right: 30px;
+        position: relative;
+    
+    }
+    .img{
+        margin-right: 0.8%;
+        margin-left: 0.8%;
+        height: 150px;
+        width: 200px;
+        margin-bottom: 0.4%;
+        position: relative;
+        
+
+
+    
+
+    }
+    .img1{
+
+        height: 150px;
+        width: 200px;
+        position: relative;
+    }
+.img:hover{
+    box-shadow: 0 0 20px black, 0 0 25px gray;
+}
+.img1:hover{
+    box-shadow: 0 0 20px black, 0 0 25px gray;
+}
+#img11{
+    content: "Dark matter" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img11:hover{
+
+    opacity: 0.5;
+}
+#img22{
+    content: "Galaxy" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img22:hover{
+
+    opacity: 0.5;
+}
+#img33{
+    content: "Nebula" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img33:hover{
+
+    opacity: 0.5;
+}
+#img44{
+    content: "Black Hole" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img44:hover{
+
+    opacity: 0.5;
+}
+#img55{
+    content: "Super Nova" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img55:hover{
+
+    opacity: 0.5;
+}
+#img66{
+    content: "Comet" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img66:hover{
+
+    opacity: 0.5;
+}
+#img77{
+    content: "Gamma rays brust" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img77:hover{
+
+    opacity: 0.5;
+}
+#img88{
+    content: "Asteroid" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img88:hover{
+
+    opacity: 0.5;
+}
+#img99{
+    content: "Solar Wind" ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#img99:hover{
+
+    opacity: 0.5;}
+
+/*div 2 box*/
+
+#container{
+            display: flex;
+            flex-direction: row;
+            background-color:black;
+            height: 550px;
+            width: 100vw;
+            position: absolute;
+            margin-top: 210vh;
+            font-size: 1.5rem;
+
+        }
+        .pictures{
+            margin-left: 10%;
+            margin-top: 5%;
+            ;height:450px;width:33%;
+            color: white;
+            
+    
+        }
+        .pictures a img:hover{
+            height:10%;
+            width: 70%;
+        }
+        .pictures  #heading:hover{
+            font-size: 2.5rem ;
+        }

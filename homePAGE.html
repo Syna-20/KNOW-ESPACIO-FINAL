@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="refresh" content='2,url="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/login.html'> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="cursor.css"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="https://xp.io/storage/2NpsufdE.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	 <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+	 	<link rel="stylesheet" type="text/css" href="video.css">
+	   <link rel="stylesheet" type="text/css" href="header.css">
+	   <link rel="stylesheet" type="text/css" href="text.css">
+	   <link rel="stylesheet" href="s-p.css">
+	   <link rel="stylesheet" type="text/css" href="foot.css">
+	   <link rel="stylesheet" type="text/css" href="gamediv.css">
+	<title>Home</title>
+</head>
+<style type="text/css">
+	{
+		font-family: 'Bakbak+One';
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	/*body{
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		min-height: 50vh;
+		background: #252839;
+	}*/
+	body{
+		background-image: url('https://wallpaperaccess.com/full/695451.jpg');
+	}
+	#gamebox{
+			width: 100%;
+			height: 550px;
+			background-image: url(https://xp.io/storage/OdTYpuV.png);
+			background-repeat: no-repeat;
+			background-size: 130%;
+			
+			border-style: solid;
+			margin-top: 282vh;
+			display: flex;
+
+		}
+		
+	#text-animation{
+		background: #252839;
+		height: 350px;
+		width: 100vw;
+		background-image: url('https://wallpaperaccess.com/full/695451.jpg');
+		text-align: center;
+		padding-top: 8%;
+		object-fit: contain;
+		margin-top: 10vh;
+		margin-left: -8px;
+		
+	}
+	#animation{
+		position: relative;
+		font-size: 4rem;
+		letter-spacing: 0.7rem;
+		/*color:#252839 ;*/
+		/*-webkit-text-stroke: 0.3vw #252839;*/
+		font-family: 'Bakbak One';
+		text-transform: uppercase;
+
+	}
+	#animation::before{
+		content: attr(data-text);
+		position: absolute;
+		top: 0;
+		left: 0%;
+		height: 100%;
+		width: 0;
+		color:#ff5722;
+		/*-webkit-text-stroke: 0vw #252839;*/
+		/*border-right: 2px solid #ff5722;*/
+		overflow: hidden;
+		animation:  animate 10s linear infinite;
+		text-shadow: 10px 13.36px 8.896px #9e9e9e, 3px -2px 1px white;
+    letter-spacing: 0.7rem;
+	}
+	@keyframes animate{
+		0%,10%,100%{
+			width: 0;
+		}
+		70%,90%{
+			width: 100%;
+		}
+	}
+	#background-video {
+  height: 30vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#header-right{
+	font-family: 'Bakbak One';
+}
+#solar-system{
+	/*margin-top: 5vh;*/
+	background-color: black;
+	height: 550px;
+	width: 100vw;
+	object-fit: contain;
+	position: absolute;
+	margin-left: -8px;
+	display: flex;
+
+}
+#quiz{
+	/*margin-top: 5vh;*/
+	background-color: black;
+	background: linear-gradient(45deg,#312857,black 50%);
+	height: 550px;
+	width: 100vw;
+	object-fit: contain;
+	position: absolute;
+	margin-left: -8px;
+	display: flex;
+	margin-top: 72.3vh;
+	/*animation-name:changeShape,rotate,reduceSize ;
+			animation-duration:1s,1s,1s ;
+			animation-direction:alternate,alternate,alternate ;
+			animation-iteration-count:infinite,infinite,infinite ;*/
+
+}
+#timeline-box{
+	padding-top: 40px;
+}
+#solar-text{
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 10px;
+	padding-top: 6%;
+	line-height: 25px;
+}
+.btn btn-primary{
+	border-radius: 0%;
+	font-weight: bold;
+}
+/*@keyframes reduceSize{
+			from{height: 550px;
+				width: 100vw;
+				}
+
+			to {height: 525px;
+				width: 95vw;
+				alignment-baseline: central;}
+		}*/
+		#quiz:hover{
+			width: 97vw;
+			height: 540px;
+			margin-left: 15px;
+		}
+		#progress{
+    position: fixed;
+    top: 1vw;
+    right: 1vw;
+    font-size: 1rem;
+    z-index: 999999;
+}
+
+#progress-bar {
+    height: 30px;
+    width: 10vw;
+    background-color: transparent;
+    text-align: center;
+    color: #FF7F3F;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px grey, 0px 0px 5px orange;
+}
+
+#progress-bar span {
+    line-height: 30px;
+}
+
+#scrolled {
+    font-size: 1.3rem;
+}
+
+
+</style>
+<body>
+	<header >
+		<video id="background-video" autoplay loop muted poster="https://xp.io/storage/JHDREJt.png">
+			<source src="C:\Users\HP\Downloads\Galaxy Motion Background Video [HD] _ FREE.mp4" type="video/mp4">
+				</video>
+				<div class="header">
+
+					<a href="#default" class="logo"><img src="https://xp.io/storage/2OApv9xP.png" height='75px' width:'100px' ></a>
+					<div class="header-right" style='z-index: 4;font-family: "bakbak one";'>
+						<a class="active" href="#home" >Home</a>
+                        <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/merch.html"  style="color:white;">Merchandise</a>
+                        <a href="#contact"  style="color:white;">Contact</a>
+                        <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/about-us.html" target='_self'  style="color:white;">About Us</a>
+
+					</div><br><br>
+					 
+	</header>
+	<main>
+	 <div id="my-image">
+
+                <img src="C:\Users\HP\Downloads\astro_sticker_1.png">
+                
+	</div>
+	<div id='progress'>
+	 <div id="progress-bar">
+           <span><span id="scrolled">0</span>% Viewed</span>
+       </div>
+   </div>
+	<div id="text-animation">
+<h2 id='animation' data-text="LET'S BEGIN THE ADVENTURE 🚀" style="color:blACK;">"LET'S BEGIN THE ADVENTURE"</h2>
+</div>
+<div id="solar-system"><div id="timeline-box"> <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/earth2.html" target="_blank"><img src="https://xp.io/storage/EM8o340.png" alt='Earth'></a></div> 
+	<div id='solar-text'><h2 style="text-align:left;font-family: 'Titillium Web', sans-serif;">THE SOLAR SYSTEM</h2><br><br><p style='text-align: left;line-height: 30px;font-size: 2rem;font-weight:0;'>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies.</p><br><button type="button" class="btn btn-danger" style='background-color: #ff5722;border-radius: 0%;width: 250px;height: 50px;letter-spacing: 5px;font-size: 1.5rem;font-weight: bold;'><a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/final.html" style="color:white;text-decoration: none;">Get Started</a></button></div>
+	
+</div>
+
+<div id="quiz">
+	<div id='solar-text'><h2 style="text-align:left;font-family: 'Titillium Web', sans-serif;">QUIZ</h2><br><br><p style='text-align: left;line-height: 30px;font-size: 2rem;font-weight:0;'>a test of knowledge, especially as a competition between individuals or teams as a form of entertainment.</p><br><button type="button" class="btn btn-primary" style='background-color: #ff5722;border-radius: 0%;width: 250px;height: 50px;letter-spacing: 5px;font-size: 1.5rem;font-weight: bold;'><a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/newquiz.html" style="background-color: #FF4500;color:white;text-decoration: none;">Get Started</a></button></div>
+	<div id="timeline-box"> <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/newquiz.html" target="_blank"><img src="https://cdn.quizly.co/wp-content/uploads/2017/10/14234350/Can-You-Answer-These-Basic-Astronomy-Questions.jpg" alt='Earth'></a></div> 
+	
+</div>
+
+
+           
+
+    
+       <div id="flex-container" >
+        <div style='height: 500px;'>
+        <h2 style="text-align:left;font-family: 'Titillium Web', sans-serif;margin-left: 5%;padding-top: 8%;">SPACE PHENOMENA</h2><br><br>
+        <p style="font-size: 2rem;font-family: 'Titillium Web', sans-serif; margin-left: 5%;line-height: 30px;padding-top: 0%;width: 550px;color:white">Space phenomena can be defined as naturally occurring events that are caused by the vacuum of space, contained within space or directly result from an event within space.</p><br><!-- <button type="button" class="btn btn-primary" style='background-color: #ff5722;font-weight: 500;border-radius: 0%;width: 250px;height: 50px;letter-spacing: 5px;font-size: 1.5rem;margin-left: 4%;'><a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/final.html" style="color:white;text-decoration: none;">Get Started➔</a></button> -->
+        </div>
+        <div class="image" >
+            <div id="img1" class="img" >
+                <img src="https://nation.com.pk/print_images/extra-large/2020-04-05/an-invisible-substance-that-permeate-the-galaxy-1586108967-4371.jpg " width="200px" height="100%" alt="image not found" >
+                    
+                
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/DARK_MATTER%20(1).html">
+                <div id=img11>
+                    Dark matter
+
+                </div>
+            </a>
+            </div>
+        
+            <div id="img2" class="img1" >
+                <img src=" https://i.natgeofe.com/n/e484088d-3334-4ab6-9b75-623f7b8505c9/1086.jpg" width="200px" height="100%" alt="image not found">
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/GALAXY.html">
+                <div id=img22>
+                    Galaxy
+
+                </div>
+            </a>
+            </div>
+        
+            <div id="img3" class="img" >
+                <img src="https://xp.io/storage/r5EYOBR.jpg" width="200px" height="100%" alt="image not found">
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/NEBULAX.html">
+                <div id=img33>
+                    Nebula
+
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="image" >
+            <div id="img4" class="img" >
+                <img src="https://xp.io/storage/r5CKfPq.png" width="200px" height="100%" alt="image not found">
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/black-hole.html">
+                <div id=img44>
+                    Black Hole
+
+                </div>
+            </a>
+            </div>
+        
+            <div id="img5" class="img1" >
+                <img src=" https://xp.io/storage/r5L5qHG.png" width="200px" height="100%" alt="image not found">
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/SUPERNOVA.html"><div id=img55>
+                    Super Nova
+
+                </div>
+            </a>
+            </div>
+        
+            <div id="img6" class="img" >
+                 <img src="https://xp.io/storage/r5V7JTh.png" width="200px" height="100%" alt="image not found">
+                 <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/COMET.html">
+                 <div id=img66>
+                    Comet
+
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="image" style=''>
+            <div id="img7" class="img"  >
+                <img src="https://xp.io/storage/r63fn6c.png" width="200px" height="100%" alt="image not found">
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/GAMMA-RAYS-BRUST.html">
+                <div id=img77>
+                    Gamma rays burst
+
+                </div></a>
+            </div>
+        
+
+            <div id="img8" class="img1" >
+                <img src=" https://xp.io/storage/r6kOZGN.png " width="200px" height="100%" alt="image not found">
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/ASTEROIDX.html">
+                <div id=img88>
+                    Asteroid
+
+                </div>
+                </a>
+            </div>
+        
+            <div id="img9" class="img" >
+                <img src="https://xp.io/storage/r6HJhRy.png" width="200px" height="100%" alt="image not found">
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/SOLAR_WIND.html">
+                <div id=img99>
+                    Solar Wind
+
+                </div>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    
+        <div id="container" >
+        <div class="pictures" style="margin-left: 2%;padding-right: 1%;height:400px;width:33%">
+            <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/finalNews.html"><img src="https://xp.io/storage/yU6cK9U.png" alt="" id="image" style="height: 270px;margin-left: 18%;"></a>
+            <a id='heading' href="" style="text-decoration: none; color: black; text-align: center; "><p style="font-family: 'Titillium Web';font-size: 2rem;font-weight:bold; margin-left: 6%; text-align: center;color:white">Recent Discoveries</p></a>
+            <p style="font-family: 'Titillium Web';margin-left: 1%;text-align: center;">Explore more about space by visiting our page having info about all the recent happenings in the other world!!</p>
+        </div>
+
+        <div class="pictures" style="margin-left: 2%;padding-right: 1%;">
+            <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/merch.html"><img src="https://xp.io/storage/yU48VDS.png" alt="" id="image"  style="height: 270px;margin-left: 18%;"></a>
+            <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/merch.html" style="text-decoration: none; color: black; text-align: center; "><p id='heading' style="font-family: 'Titillium Web'; margin-left: 6%;font-weight:bold; font-size: 2rem;text-align: center;color:white">Merchandise</p></a>
+            <p style="font-family: 'Titillium Web';margin-left: 1%;text-align: center;">High quality Attraction-inspired gifts and merchandise. T-shirts, posters, stickers, home decor, and more, designed and sold by Team Know Espacio</p>
+        </div>
+        
+        <div class="pictures" style="margin-left: 2%;padding-right: 4%;">
+            <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/contribution.html"><img src="https://xp.io/storage/yTNYySo.png" alt="" id="image"  style="height: 270px;margin-left: 18%;"></a>
+            <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/contribution.html" id='heading' style="text-decoration: none; color: black; text-align: center; "><p style="font-family: 'Titillium Web'; margin-left: 6%; text-align: center;font-weight:bold;font-size: 2rem;color:white">Contribution</p></a>
+            <p style="font-family: 'Titillium Web';margin-left: 1%;text-align: center;">Feel free to interact with our team and write blogs,feedbacks etc. in this special segment.</p>
+        </div>
+    </div>
+		<div id="gamebox1" class="game">
+		<img src="https://xp.io/storage/OdBVfAD.png" height="60%" id="astro" class="gani1" style="margin-top:13%" >
+		<img src="https://xp.io/storage/Oek6UIu.png" height="57%" id="ast" style="margin-top: 2%;margin-left: -8%; ;">
+		<a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/Shooting%20Ball%20Game%20using%20JavaScript/index.html"  style="margin-top:18%;" id="stand"><img src="https://xp.io/storage/OyujyTG.png" height="80%"  class="game"> </a>
+		<img src="https://xp.io/storage/Of3fnoM.png" height="35%" style="margin-top:4%;margin-left: -3%;" id="rock">
+
+
+	</div>
+
+	</div>
+    <footer id="footer">
+        <div class="divis" id="first">
+        	<form action='mailto:knowespacio@gmail.com' method="get">				
+            <input type="text" placeholder="Enter Your Email" name="email" id="email">
+            <input type="submit" value="Log In" id="button">
+            </form>
+            <br><br><br>
+            <div id="social">
+            <a href=""><img src="https://xp.io/storage/JFSBjDi.png" alt="" height="100%" style="border-radius: 0%;margin-top: 0%;margin-left: 36%;"></a>
+            <a href=""><img src="https://xp.io/storage/JFUQgmq.png" alt="" height="100%" style="border-radius: 0%;margin-left: 2%;"></a>
+            <a href=""><img src="https://xp.io/storage/JFZcNGB.png" alt="" height="100%" style="border-radius: 0%;margin-left: 2%;"></a>
+            <a href=""><img src="https://xp.io/storage/JGdMsOw.png" alt="" height="100%" style="border-radius: 0%;margin-left: 2%;"></a>
+        </div>
+            <br>
+            
+            
+            <div style="margin-top: 1%;" id="text1">
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/homePAGE.html" style="  text-decoration: none;color: white;font-size: 180%;margin-left: 33.5%;"><b>Home | </b></a>
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/merch.html" style="text-decoration: none;color: white;font-size: 180%;"><b>Merchandise | </b></a>
+                <a href="" style="text-decoration: none;color: white;font-size: 180%;"><b>Contact | </b></a>
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/about-us.html" style="text-decoration: none;color: white;font-size: 180%;"><b>About Us</b></a> 
+            </div>
+            <div style="margin-top: 1%;opacity: 0.8;" id="text1">
+                <a href="" style="  text-decoration: none;color: white;font-size: 180%;margin-left: 31%;"><b>News | </b></a>
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/newquiz.html" style="text-decoration: none;color: white;font-size: 140%;"><b>Quiz | </b></a>
+                <a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/contribution.html" style="text-decoration: none;color: white;font-size: 140%;"><b>Contribute Us | </b></a>
+                <a href="" style="text-decoration: none;color: white;font-size: 140%;"><b>Solar System |</b></a>
+                <a href="" style="text-decoration: none;color: white;font-size: 140%;"><b>Space Phenomena</b></a> 
+            </div>
+            <div id="foot">
+            	<p>© 2022 KET, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript" src='game.js'></script>
+<script type="text/javascript" src='scroll.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

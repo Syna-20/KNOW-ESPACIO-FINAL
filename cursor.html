@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cursor.css">
+	<title>
+		cursor
+	</title>
+</head>
+<body>
+<h2>follow the cursor</h2>
+<div id='cursor'></div>
+
+
+<!-- <script type="text/javascript">
+		var cursor = document.getElementById('cursor');
+		document.addEventListener('mousemove',function(e){
+				var x = e.clientX;
+				var y = e.clientY;
+
+	cursor.style.left = x + "px";
+	cursor.style.top y + "px"; 
+
+});
+
+</script> -->
+<script>
+
+const cursor = document.querySelector('.cursor'); document.addEventListener('mousemove', (e) => { cursor.style.left = e.pageX + 'px'; cursor.style.top e.pagex 'px';
+
+})
+
+</script>
+
+</body>
+</html>

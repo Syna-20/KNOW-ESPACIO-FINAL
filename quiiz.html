@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+		
+			background-image: url('https://wallpaperaccess.com/full/695451.jpg');
+			color: white;
+			font-family: "Titillium Web";
+		}
+		#quizbox{
+			width: 80%;
+			height: 90vh;
+			
+			
+			margin-left: 12%;
+			display: flex;
+			flex-direction: column;
+			overflow:hidden;
+			scroll-behavior: smooth; 
+
+			box-shadow: 5px 5px 30px 19px #ECE1DF75  ;
+
+			margin-top: 2%;
+
+		}
+		
+		
+		#startquiz{
+			background-image:  url('https://xp.io/storage/py6V7F6.png');
+			width: 100%;
+			height: 100%;
+			background-size: auto;
+			background-position: bottom;
+			background-position-x: 70%;
+			background-position-y: 70%;
+			background-repeat: no-repeat;
+			padding: 10%;
+			padding-bottom: 20%;
+			
+			
+
+			
+		}
+
+		.Q_1{
+			width: 100%;
+			height: 90vh;
+			margin-left: -10%;
+		}
+		#start_button{
+			width: 100%;
+			height:100% ;
+		}
+		#start_button1{
+			border-style: solid;
+			border-color: white;
+			width: 30%;
+			text-align: center;
+			border-radius: 30px;
+			margin-top: 26%;
+			margin-left: 25%;
+			margin-bottom: 10%;
+			font-size: 1em;
+
+
+			
+			background-color: white;
+			color: black;
+		}
+		iframe{
+			width: 100% ;
+			height: 92%;
+			border-style: none;
+			margin-left: 10%;
+			overflow: hidden;
+			
+			
+		}
+		#next{
+			
+			width: 20%;
+			border-style: solid;
+			border-color: orange;
+			text-align: center;
+			border-radius: 30px;
+			height: 5%;
+			margin-left: 78%;
+			margin-top: 0%;
+			margin-bottom: 90%;
+			color: white;
+			background-color: orange;
+
+
+		}
+		#next h2{
+			margin-top: 1%;
+			text-decoration: none;
+			font-size: 120%;
+
+		}
+		#next:hover{
+			background-color: white;
+			color: black;
+
+		}
+		a{
+			text-decoration: none;
+			
+
+		}
+	</style>
+</head>
+<body>
+	<div id="quizbox">
+		<div id="startquiz">
+			<div id="start_button">
+				<a href="#q1"> <div id="start_button1">
+
+				<h1>Start Quiz </h1>
+
+			</div> </a> <!-- start_button1 -->
+			</div> <!-- start_button -->
+
+
+		</div> <!-- startquiz -->
+		<div id="q1" class="Q_1">
+			<iframe src="q1.html" scrolling="no"></iframe>
+			 <a href="#q2"><div id="next">
+				<h2>Next Question</h2>
+			</div></a>
+
+		</div> <!-- q1 -->
+		<div id="q2" class="Q_1">
+			<iframe src="q2.html" scrolling="no" ></iframe>
+			<a href="#q3"> <div id="next">
+				<h2>Next Question</h2>
+			</div></a>
+
+			
+		</div> <!-- q2 -->
+		<div id="q3" class="Q_1">
+			<iframe src="q3.html"  scrolling="no"></iframe>
+			<a href="#q4"> <div id="next">
+				<h2>Next Question</h2>
+			</div></a>
+
+			
+		</div> <!-- q3 -->
+		<div id="q4" class="Q_1">
+			<iframe src="q4.html"  scrolling="no" ></iframe>
+			<a href="#q5"> <div id="next">
+				<h2>Next Question</h2>
+			</div></a>
+
+			
+		</div> <!-- q4 -->
+		<div id="q5" class="Q_1"   >
+			<iframe src="q5.html"  scrolling="no" ></iframe>
+			<a href="#q6"> <div id="next">
+				<h2>End Quiz</h2>
+			</div></a>
+
+		</div>
+		<div id="q6" >
+		<iframe src="welldone.html" style='height:100vh;margin-left:0%' ></iframe> 
+	</div>
+
+		  <!-- q5 -->
+
+		
+	</div> <!-- quizbox -->
+
+</body>
+</html>

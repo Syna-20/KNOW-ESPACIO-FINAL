@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contribute </title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://xp.io/storage/2NpsufdE.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		#header_1{
+	background-image: url('https://wallpaperaccess.com/full/695451.jpg');
+	text-align: center;
+	width: 100%;
+	height: 10vh;
+	margin-top: -1px;
+	margin-right: 0px;
+	margin-left: -15px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: -22px;
+
+	}
+	#header_1 a{
+		color: white;
+		font-size: 26px;
+		text-decoration: none;
+		margin-top: 15px;
+	}
+	body{
+		background-image: url('https://wallpaperaccess.com/full/695451.jpg');
+		font-family: "Titillium Web";
+		text-align: center;
+		color: white;
+		font-weight: bold;
+
+
+
+	}
+	#formbox{
+		margin-left: 22%;
+		background-color:#918F8F ;
+		width: 100vh;
+		padding: 5vh;
+
+	}
+	form{
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+	}
+	form input{
+		width: 30%;
+		height: 6vh;
+		
+		text-align: center;
+		margin-left: 35vh;
+
+	}
+	form textarea{
+		width: 100vh;
+		height: 30vh;
+		text-align: center;
+	}
+	form label{
+		color: white;
+		font-size: large;
+		
+	}
+	#submit{
+		width: 20%;
+		margin-left: 40vh;
+		margin-top: 3vh;
+		border-radius: 3vh;
+	}
+	#submit:hover{
+		background-color: black;
+		color: white;
+		border-radius: 3vh;
+	}
+	h1{
+		color: white;
+		font-size: 6vh;
+	}
+	#note{
+		background-color: white;
+		text-align: center;
+		color: black;
+		position: sticky;
+		margin: 1% -1% -2% -2%;
+		padding: 1vh 0 0 0s;
+	}
+	#note a{
+		color: blueviolet;
+		font-size: small;
+
+	}
+	#status{
+		color: white;
+	}
+
+
+	
+	</style>
+</head>
+<body>
+	<div id="header_1">
+		<img  src="https://xp.io/storage/2OApv9xP.png">
+		<a href=""></a>
+		<a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/FA2/homePAGE.html"> Home</a>
+		
+		
+		
+		<a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/merchandise.html"> Merchandise</a>
+
+		<a href=""> Contact </a>
+		<a href="file:///C:/Users/HP/OneDrive/Desktop/HTML/PROJECT/about-us.html">About us</a>
+		<a href=""></a>
+
+
+
+	</div>
+	<h1>Write to us and we will Upload a blog of yours</h1>
+	<div id="formbox">
+	<form action="https://formspree.io/f/mjvlgevz" method="post" id="form">
+		<label for="name">Full Name*</label>
+		<input type="text" placeholder="Enter Your Full Name" name="name"value="Anonymous"required >
+		<label for="email">Email Id*</label>
+		<input type="text" placeholder="Enter Your Email Id" required name="email">
+		<label for="blog">Your Blog*</label>		
+		<textarea placeholder="Write Your Blog Here" required name="blog"></textarea>
+		<label for="image1">Image Link 1*</label>
+		<input type="text" placeholder="Enter Image link" required name="image1">
+		<label for="image2">Image Link 2</label>
+		<input type="text" placeholder="Enter Image link"  name="image2">
+		<label for="image3">Image Link 3</label>
+		<input type="text" placeholder="Enter Image link"   name="image3">
+		<input type="submit" value="Submit" id="submit">
+
+
+
+
+	</form>
+</div>
+<h1 id="status">
+	
+</h1>
+<div id="note">
+	<p>If you did not have image link <a href="https://xp.io/">Click Here</a> to creat image link</p>
+</div>
+	<script>
+    var form = document.getElementById("form");
+    
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        
+        
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
+</body>
+</html>

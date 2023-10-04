@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+
+    <script src="https://unpkg.com/react@0.14.8/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@0.14.8/dist/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+  </head>
+  <body>
+  <div id="root"></div>
+    <script type="text/babel">
+        class Calculator extends React.Component{
+            constructor(props){
+                super(props);
+                this.state = {
+                    number1 : 0,
+                    number2 : 0,
+                    result : 0
+                }
+            }
+
+            doAction = () => {
+                this.setState({result : parseInt(this.state.number1) + parseInt(this.state.number2) }); 
+            }
+
+
+
+            render(){
+                return(
+                <div>   
+                <input type='number' onChange={(event)=>this.setState({number1:event.target.value})}/>
+                <input type='number' onChange={(event)=>this.setState({number2:event.target.value})}/>
+                <input type="button" onClick={this.doAction} value="Add"/>
+                <input type='text' value={this.state.result} readonly/>
+                </div>
+
+                )
+            }           
+        }
+    React.render(
+        <Calculator/>,
+        document.getElementById('root')
+    )       
+    </script>
+  </body>
+  </html>

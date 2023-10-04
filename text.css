@@ -1,0 +1,239 @@
+/* video background */
+
+#background-video {
+  height: 40vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 500px){
+  #background-video{
+    width: 100%;
+  }
+}
+/* page content */
+h1, h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh; 
+}
+
+h2 { font-size: 3rem; }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      /*background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;*/
+      background-size: cover;
+    }
+}
+/*image*/
+#my-image{
+  height: 12rem;
+  width: 12rem;
+  /*margin-left: 0px;*/
+  margin-top: -10vh;
+  float: right;
+  position: relative;
+}
+#my-image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+ /* border:3px solid white*/;
+  /*box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3)*/
+}
+
+#main-background{
+  position: absolute;
+}
+#main-background {
+  /*background: url("C:\Users\HP\Downloads\19333449.jpg");*/
+  /*background-size: contain;*/
+   /*height: 50vh;*/
+/*width: 100%;*/
+  /*margin-top: 37.1vh;*/
+  margin-left: -10px;
+  margin-bottom: 50px;
+  object-fit: cover;
+ /* position: relative;*/
+  /*margin-top: 25vh;*/
+ 
+ 
+  color: black;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list{
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+  margin: 0px;
+  position: relative;
+
+}
+.horizontal-list li{
+  display: inline-block;
+  margin: 0px 18px 18px 0px;
+}
+.horizontal-list li a{
+  color: white;
+  text-decoration: none;
+  
+  font-family: sans-serif;}
+  #name{
+    color:white;
+    text-align:center;
+    font-family:sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+/* Name and Social Icons*/
+#name-social-container{
+  margin-top: 20vh;
+}
+.text-center{
+  text-align: center;
+}
+.social-icons li a img{
+  padding: 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+
+  
+
+
+
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTFlRqfZrPJ2GcGI2e-MdcNjEXAtKRzxei_w&usqp=CAU');*/
+  padding: 20px 10px;
+  margin: 0px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 200px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  /*background-color: #673ab7;*/
+  background-color: black;
+  color: white;
+}
+.header a.active: hover{
+  color: orange;
+  z-index: 2;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: none;
+  /*font-family: sans-serif;*/
+  font-weight: bold;
+  padding-right: 150px;
+  padding-left: 150px;
+  letter-spacing: 5px;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+#timeline-box img{
+  /*background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-168504892-1568303467.png?crop=1.00xw:0.606xh;0,0.0671xh&resize=980:*");*/
+      /*border-radius: 50%;*/
+      height: 60vh;
+      width:50vw;
+      border:1px solid black;
+      /*box-shadow: 0px 10px 25px 14px darkgrey;*/
+            /*margin-top: 100px;}}*/
+            /*padding-top: 20px;}*/
+            padding-left: 15px;
+          animation-name:changeShape,rotate,reduceSize ;
+      animation-duration:1s,1s,1s ;
+      animation-direction:alternate,alternate,alternate ;
+      animation-iteration-count:infinite,infinite,infinite ;}
+      @keyframes reduceSize{
+      from{height: 60vh;
+        width: 50vw;
+        }
+
+      to {height: 61vh;
+        width: 51vw;
+        alignment-baseline: central;}
+    }
+    #flex-container{
+  /*background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-168504892-1568303467.png?crop=1.00xw:0.606xh;0,0.0671xh&resize=980:*");*/
+      /*border-radius: 50%;*/
+      height: 520px;
+      width:100vw;
+      border:1px solid black;
+     
+            /*padding-left: 15px;*/
+          animation-name:changeShape,rotate,reduceS ;
+      animation-duration:1s,1s,1s ;
+      animation-direction:alternate,alternate,alternate ;
+      animation-iteration-count:infinite,infinite,infinite ;}
+ @keyframes reduceS{
+      from{height: 520px;
+        width: 99vw;
+        }
+
+      to {height: 515px;
+        width: 100vw;
+        alignment-baseline: central;}
+    }
+
+
+
+
+
+    
