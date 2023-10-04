@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>
+        </title>
+        <style>
+            body{
+                background-color:pink;
+            }
+            #div1{
+                height:80rem;
+                width:85%;
+                margin:auto;
+                background-image:linear-gradient(to right,red,orange,pink 50%,yellow,green);
+                border:1px solid red;
+            }
+            h1{
+                text-shadow:-11px -10px 4px red;
+                text-align:center;}
+            #d2{
+                height:4rem;
+                width:90%;
+                background-color:cyan;
+/*                 margin-top:-20px; */
+                margin-left:25px;
+                border:2px solid blue;
+            }
+              #d3{
+                height:4rem;
+                width:90%;
+                background-color:cyan;
+/*                 margin-top:-20px; */
+                margin-left:25px;
+                   border:4px solid blue;
+            }
+            #d4{
+/*                 height:4rem; */
+                width:90%;
+/*                 background-color:cyan; */
+/*                 margin-top:-20px; */
+                margin-left:25px;
+                   border-left:2px dashed green;
+                 border-right:2px dashed red;
+                 border-top:2px dashed blue;
+                 border-bottom:2px dashed blue;
+                padding:20px;
+                padding-left:0px;
+                line-height:50px;
+            }
+            #name:hover{
+                color:yellow;
+            }
+                
+        </style>
+    </head>
+    <body>
+       <div id='div1'>
+           <div id='d2'><h1>Welcome to Chitkara University!!</h1></div>
+           <div id='d3'><h1>Survey Form</h1></div>
+           <div id='d4'>
+               <form style='padding-right:50px;'>
+                    <label>Please Fill the survey!!!                            </label><br>
+                   <label for='name'>*Name  </label>
+                   <input  id='name'type='text' placeholder='Enter your name' style='margin-left:50%'><br>
+                    <label for='name'>*Email    </label>
+                   <input id='name'type='email' placeholder='Enter your email' style='margin-left:50%'><br>
+                    <label for='name'>*Age  </label>
+                   <input id='name'type='text' placeholder='18' style='margin-left:52%'><br>
+                   <label>Which option best describe your current role in Chitkara?</label>
+                   <select style='margin-left:10%' ><option>Student</option></select><br>
+                   <label>How likely is that you would recommend Chitkara University to a friend?</label><input type='checkbox'>Definitely<br><input type='checkbox' style='margin-left:80%'>Maybe<br>
+                    <label>What do you like most in Chitkara University?</label>
+                   <select name='select an option' value='select an option' style='margin-left:25%'><option>Student</option><option>Student</option><option>Student</option><option>Student</option></select>
+                   <br>
+                   <label>How likely is that you would recommend Chitkara University to a friend?</label><input type='checkbox'>Definitely<br><input type='checkbox' style='margin-left:80%'>Maybe<br>
+               </form></div>
+           </div>
+    </body>
+    
+</html>

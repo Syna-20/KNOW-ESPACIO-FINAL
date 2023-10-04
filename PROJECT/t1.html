@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .main{
+                height:80vh;
+                width:80vw;
+                background-image:linear-gradient(to right,red,orange,pink 50%,yellow,green);
+                margin:auto;
+            }
+
+            .sub{
+                background-color: yellow;
+            }
+
+            .sub:hover{
+                background-image: linear-gradient(to top,red,orange,pink 50%,yellow,green);
+                color: white;
+                width: 80vw;
+                border: 3px solid green;
+            }
+            table td #i:hover{
+                color: yellow;
+            }
+            table td{
+                line-height: 30px;
+            }
+
+        </style>
+    </head>
+    <body style="background-color:pink;">
+        <div class="main">
+            <h1 style="background-color: cyan;border: blue 2px solid;text-align: center;text-shadow: -5px -5px 2px red;margin: 0;">Welcome to Chitkara University!!</h1>
+<h1 style="background-color: cyan;border: blue 4px solid;text-align: center;text-shadow: -5px -5px 2px red;margin: 0;">Survey form</h1>
+<div class="main" style="border: blue dashed 2px;border-left:green dashed 2px;border-right:red dashed 2px;">
+	<p>Please Fill The Survey Form!!</p>
+    <form style="width: 100%;">
+    	<table style="width: 100%;">
+        	<tr>
+            	<td>*Name</td>
+                <td><input id='i' type="text" placeholder="Enter Your Name"></td>
+            </tr>
+            <tr>
+            	<td>*Email</td>
+                <td><input  id='i' type="email" placeholder="Enter Your Email"></td>
+            </tr>
+            <tr>
+            	<td>*Age</td>
+                <td><input   id='i' type="number" min='18'max='50' placeholder="18"></td>
+            </tr>
+            <tr>
+            	<td>*Which option describe your best role in chitkara</td>
+                <td><select><option>student</option></select></td>
+            </tr>
+            <tr>
+                <td>*How likely is that you would recommend Chitkara University to a friend?</td>
+                <td><input type="checkbox" name="r1">Definitely<br><input type="checkbox" name="r1">Maybe</td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <!-- <td><input type="radio" name="r1">Maybe</td> -->
+            </tr>
+
+            <tr>
+                <td>What do you like most in Chitkara University</td>
+                <td><label for="cars"></label>
+
+                    <select name="cars" id="cars">
+                        <option value="v">Select An Option</option>  
+                      <option value="volvo">Class</option>
+                      <option value="saab">Faculty</option>
+                      <option value="mercedes">Sportortium</option>
+                      <option value="audi">hostel</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Things that should be improvised in the future <br> (Check all that apply)</td>
+                <td><input type="checkbox">Food Quality<br><input type="checkbox">Parking Area</td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <!-- <td><input type="checkbox">Parking Area</td> -->
+            </tr>
+                
+            
+        </table>
+        <br>
+        <center><input class="sub" type="submit"></center>
+    </form>
+</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+/* video background */
+
+#background-video {
+  height: 50vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* page content */
+h1, h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh; 
+}
+
+h2 { font-size: 3rem; }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      /*background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;*/
+      background-size: cover;
+    }
+}
+/*image*/
+#my-image{
+  height: 12rem;
+  width: 12rem;
+  /*margin-left: 0px;*/
+  margin-top: -10vh;
+  float: right;
+  position: relative;
+}
+#my-image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+ /* border:3px solid white*/;
+  /*box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3)*/
+}
+
+#main-background{
+  position: absolute;
+}
+#main-background {
+  /*background: url("C:\Users\HP\Downloads\19333449.jpg");*/
+  /*background-size: contain;*/
+   /*height: 50vh;*/
+/*width: 100%;*/
+  /*margin-top: 37.1vh;*/
+  margin-left: -10px;
+  margin-bottom: 50px;
+  object-fit: cover;
+ /* position: relative;*/
+  /*margin-top: 25vh;*/
+ 
+ 
+  color: black;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list{
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+  margin: 0px;
+  position: relative;
+
+}
+.horizontal-list li{
+  display: inline-block;
+  margin: 0px 18px 18px 0px;
+}
+.horizontal-list li a{
+  color: white;
+  text-decoration: none;
+  
+  font-family: sans-serif;}
+  #name{
+    color:white;
+    text-align:center;
+    font-family:sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+/* Name and Social Icons*/
+#name-social-container{
+  margin-top: 20vh;
+}
+.text-center{
+  text-align: center;
+}
+.social-icons li a img{
+  padding: 10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+
+  height: auto;
+
+.social-icons li a img:hover{
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
